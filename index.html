@@ -9,16 +9,24 @@
 <body>
   <div class="container">
     <h1>Quad N-Back</h1>
-    <p id="turn-label"></p>
-    <div id="grid" class="grid"></div>
+    
+    <p id="turn-label">Turn: 1</p>
+    
+    <div id="grid" class="grid">
+      <!-- A 3x3 grid will be created here via JS -->
+    </div>
+    
     <div class="stimuli">
       <button id="pos-btn">Position Match</button>
       <button id="col-btn">Color Match</button>
       <button id="shape-btn">Shape Match</button>
       <button id="sound-btn">Sound Match</button>
     </div>
+    
     <div id="result" class="result"></div>
+    
     <div class="instructions">
+      <h3>Instructions:</h3>
       <p>
         Every turn, a tile is highlighted with a color and a shape, and a sound is played.<br/>
         Mark which attribute(s) match the one from <b>2 steps back</b> (if any), before the next turn.<br/>
@@ -26,6 +34,7 @@
       </p>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
